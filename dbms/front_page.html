@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flat management</title>
+    <link rel="shortcut icon" type="x-icon" href="https://cdn-icons-png.flaticon.com/512/197/197722.png">
+</head>
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/39a9d14536.js" crossorigin="anonymous"></script>
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"> -->
+
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <h1>Flat<span>Easy</span></h1>
+            <ul>
+                <li id="home"><i class="fa-solid fa-house"></i><a href="">Home</a></li>
+                <li><i class="fa-solid fa-clone"></i><a onclick="show(1)" href="#">Services</a></li>
+                <li> <i class="fa-solid fa-address-card"></i><a onclick="show(2)" href="#">About us</a></li>
+                <li> <i class="fa-solid fa-phone"></i><a onclick="show(3)" href="#">Contact us</a></li>
+            </ul>
+        </div>
+
+
+        <div class="container1" id="service">
+            <div class="contservice">
+                <h1 class="head">SERVICES</h1>
+                <!-- <label for="click"><i class="fa-solid fa-xmark"></i></label>  -->
+                <p class="service">
+                     <div class="ser"> 
+                        <ul> 
+                            <li> The proposed system will provide the apartment manager to enter different data pertaining to different fields such as tracking and storing tenant information, garden management,security management , cleaning and hygiene maintenance etc. </li>
+                            <li>The system helps to keep residential facilities safe and enjoyable. </li>
+                            <li>Automation and streamlined workflow is easier and more efficient to manage, this web application makes data more transparent and store it in one place and have full control over it.</li>
+                        </ul>
+                     </div> 
+                </p>  
+            </div>
+        </div>
+
+
+        <div class="container2" id="about">
+            <div class="contabout">
+                <h1 class="head">ABOUT US</h1>
+                <!-- <label for="click"><i class="fa-solid fa-xmark"></i></label> -->
+                <p class="about">With growing sizes of building complexes, apartment management is becoming one of the
+                    most
+                    challenging jobs. The main task of an apartment manager is to improve the client-tenant living
+                    experience . They need to reduce costs and increase profit whenever possible. Our apartment
+                    management system will be an online web application to maintain a database which contains the
+                    details of apartment maintenance and its residence.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="container3" id="contact">
+            <div class="contcontact">
+                <h1 class="head">CONTACT US</h1>
+                <!-- <label for="click"><i class="fa-solid fa-xmark"></i></label> -->
+                <!-- <h3>Phone</h3> -->
+                <p class="contact">
+                    <!-- <h3>Phone</h3> -->
+                    <u class="topic">Phone</u>
+                    <br>
+                    9019623025
+                    <br>
+                    7829955014
+                    <br>
+                </p>
+                <!-- <h3>Landline</h3> -->
+                <p class="contact">
+                    <!-- <h3>Landline</h3> -->
+                    <u class="topic">Landline</u>
+                    <br>
+                    0821-245667
+                    <br>
+                    0821-234677
+                    <br>
+                </p>
+                <!-- <h3>Email</h3> -->
+                <p class="contact">
+                    <!-- <h3>Landline</h3> -->
+                    <u class="topic">Email</u>
+                    <br>
+                    priya456@gmail.com
+                    <br>
+                    flatmanagement234@gmail.com
+                    <br>
+                </p>
+
+            </div>
+        </div>
+        <div id="login_main" class="hero">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"> </div>
+                    <button type="button" class="toggle-btn" onclick="login()">Admin</button>
+                    <button type="button" class="toggle-btn" onclick="register()">User</button>
+                </div>
+                <form action="admin.php" method="post" id="login" class="input-group">
+                    <input name="admin" type="password" class="input-field" placeholder=" Enter Password" required>
+                    <button type="submit" class="submit-btn">LOGIN</button>
+                </form>
+
+
+                <form action="login.php" method="post" id="register" class="input-group" autocomplete="off">
+                    <input name="user" type="text" class="input-field" placeholder=" User Id" required>
+                    <input name="password" type="password" class="input-field" placeholder=" Enter Password" required>
+                    <button type="submit" class="submit-btn">LOGIN</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <script src="scripting.js">
+
+    </script>
+</body>
+
+</html>
